@@ -17,16 +17,16 @@ base64.workspace = true
 cfg-if = { workspace = true, optional = true }
 devicemapper = { version =  "0.33.5", optional = true }
 dircpy = { version = "0.3.12", optional = true }
-flate2 = "1.0"
+flate2 = "1.0.27"
 fs_extra = { version = "1.2.0", optional = true }
 futures = { version = "0.3.28", optional = true }
-futures-util = "0.3"
+futures-util = "0.3.28"
 hex = { workspace = true, optional = true }
 lazy_static = { workspace = true, optional = true }
-libc = "0.2"
+libc = "0.2.147"
 log = "0.4.14"
 loopdev = { git = "https://github.com/mdaffin/loopdev", rev = "c9f91e8f0326ce8a3364ac911e81eb32328a5f27"}
-nix = { version = "0.26", optional = true }
+nix = { version = "0.26.4", optional = true }
 oci-distribution = { git = "https://github.com/krustlet/oci-distribution.git", rev = "f44124c", default-features = false, optional = true }
 oci-spec = "0.6.2"
 ocicrypt-rs = { path = "../ocicrypt-rs", default-features = false, features = ["async-io"], optional = true }
@@ -36,18 +36,18 @@ reqwest = { workspace = true, features = ["json"], optional = true }
 sequoia-openpgp = { version = "1.7.0", default-features = false, features = ["compression", "crypto-rust", "allow-experimental-crypto", "allow-variable-time-crypto"], optional = true }
 serde = { workspace = true, features = ["serde_derive", "rc"] }
 serde_json.workspace = true
-serde_yaml = { version = "0.9", optional = true }
+serde_yaml = { version = "0.9.25", optional = true }
 sha2.workspace = true
 sigstore = { git = "https://github.com/sigstore/sigstore-rs.git", rev = "69e8f33", default-features = false, optional = true}
 strum.workspace = true
-strum_macros = "0.25"
+strum_macros = "0.25.2"
 tar = "0.4.37"
 tokio.workspace = true
 tonic = { workspace = true, optional = true }
 ttrpc = { workspace = true, features = [ "async" ], optional = true }
 url = "2.2.2"
-walkdir = "2"
-zstd = "0.12"
+walkdir = "2.4.0"
+zstd = "0.12.4"
 
 nydus-api = { version = "0.3.0", optional = true}
 nydus-service = { version = "0.3.0", features = ["coco"], optional = true}
@@ -59,8 +59,8 @@ ttrpc-codegen = { workspace = true, optional = true }
 
 [dev-dependencies]
 cfg-if.workspace = true
-filetime = "0.2"
-nix = "0.26"
+filetime = "0.2.22"
+nix = "0.26.4"
 openssl.workspace = true
 rstest.workspace = true
 serial_test = "2.0.0"
